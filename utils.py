@@ -1,9 +1,9 @@
 import os
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "nikubuntu-1-5d7d63a5b8ca.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "fir-5a81e-a7ee7dcf6599.json"
 
 import dialogflow_v2 as dialogflow
 dialogflow_session_client = dialogflow.SessionsClient()
-PROJECT_ID = "nikubuntu-1"
+PROJECT_ID = "fir-5a81e"
 
 def detect_intent_from_text(text, session_id, language_code='en'):
     session = dialogflow_session_client.session_path(PROJECT_ID, session_id)
